@@ -1,13 +1,16 @@
 <template>
   <div>
-    <div>
-      <img :src="previewImage" class="uploading-image" />
-      <input type="file" accept="image/jpeg" @change="uploadImage" />
-      <button type="submit" @click.prevent="submit">Submit</button>
-    </div>
-    <div v-if="blob">
-      <img v-bind:src="blob" />
-    </div>
+    <b-card>
+      <b-card-text>Image Conversion</b-card-text>
+      <div>
+        <img :src="previewImage" class="uploading-image" />
+        <input type="file" accept="image/jpeg" @change="uploadImage" />
+        <button type="submit" @click.prevent="submit">Submit</button>
+      </div>
+      <div v-if="blob">
+        <img v-bind:src="blob" />
+      </div>
+    </b-card>
   </div>
 </template>
 
