@@ -1,0 +1,14 @@
+.mx-input {
+    padding-left: 9px;
+    padding-right: 9px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 0px;
+    border-width: 4px;
+    border-color: #F5F5F5;
+    box-shadow: none;
+    font-size: 14px;
+    color: #3399dc;
+    height: 40px;
+  }
+  
