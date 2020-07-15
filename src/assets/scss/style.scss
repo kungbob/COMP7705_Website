@@ -1,0 +1,22 @@
+// If you want to override variables do it here
+@import "variables";
+@import "navbar";
+@import "max-width";
+@import "sidebar";
+@import "aside-menu";
+@import "footer";
+@import "breadcrumbs";
+@import "avatar";
+
+// Import styles from coreui package
+@import "~@coreui/coreui/scss/coreui";
+
+// Import styles with dark layout
+// Uncomment following line for dark layout
+//@import "~@coreui/coreui-pro/scss/themes/dark/coreui-dark";
+
+// If you want to add something do it here
+@import "custom";
+
+// ie fixes
+@import "ie-fix";

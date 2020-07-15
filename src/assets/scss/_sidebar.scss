@@ -1,0 +1,84 @@
+///$$$ Sidebar $$$///
+
+.nav-link {
+  font-size: 16px;
+}
+
+// TODO find how to style nav-icon without !important
+.nav-icon {
+  font-size: 18px !important;
+}
+
+// indicator = dropdown icon == <, v
+$indicator-color: #fff;
+
+$sidebar-bg: $primary;
+$sidebar-width: 250px;
+// $sidebar-padding: 0;
+// $sidebar-minimized-width: 50px;
+// $sidebar-minimized-height: $sidebar-minimized-width;
+// $sidebar-compact-width: 150px;
+// $sidebar-compact-height: $sidebar-compact-width;
+// $sidebar-color: #fff;
+// $sidebar-borders: none;
+// $mobile-sidebar-width: 220px;
+
+//$$$ Sidebar Header $$$//
+
+// $sidebar-header-height: auto;
+// $sidebar-header-bg: rgba(0,0,0,.2);
+// $sidebar-header-padding-y: .75rem;
+// $sidebar-header-padding-x: 1rem;
+
+//$$$ Sidebar Form $$$//
+
+// $sidebar-form-border: 0;
+// $sidebar-form-bg: darken($sidebar-bg,10%);
+// $sidebar-form-color: #fff;
+// $sidebar-form-placeholder-color: rgba(255,255,255,.7);
+
+//$$$ Sidebar Nav $$$//
+
+// $enable-sidebar-nav-rounded: false;
+
+$sidebar-nav-link-icon-color: #fff;
+$sidebar-nav-link-hover-color: $hover-color-for-fff;
+$sidebar-nav-link-hover-bg: lighten($sidebar-bg, 5%);
+$sidebar-nav-link-active-icon-color: $hover-color-for-fff;
+
+// $sidebar-nav-color: #fff;
+// $sidebar-nav-title-padding-y: .75rem;
+// $sidebar-nav-title-padding-x: 1rem;
+// $sidebar-nav-title-color: $gray-200;
+// $sidebar-nav-link-padding-y: .75rem;
+// $sidebar-nav-link-padding-x: 1rem;
+// $sidebar-nav-link-color: #fff;
+// $sidebar-nav-link-bg: transparent;
+// $sidebar-nav-link-borders: 0;
+//
+// $sidebar-nav-link-hover-icon-color: #fff;
+// $sidebar-nav-link-hover-borders: 0;
+//
+// $sidebar-nav-link-active-color: #fff;
+// $sidebar-nav-link-active-bg: lighten($sidebar-bg, 5%);
+// $sidebar-nav-link-active-borders: 0;
+//
+// $sidebar-nav-dropdown-color: #fff;
+// $sidebar-nav-dropdown-bg: rgba(0,0,0,.2);
+// $sidebar-nav-dropdown-borders: 0;
+$sidebar-nav-dropdown-indicator-color: $indicator-color;
+// $sidebar-nav-dropdown-indicator: str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 11 14'%3E%3Cpath fill='#{$sidebar-nav-dropdown-indicator-color}' d='M9.148 2.352l-4.148 4.148 4.148 4.148q0.148 0.148 0.148 0.352t-0.148 0.352l-1.297 1.297q-0.148 0.148-0.352 0.148t-0.352-0.148l-5.797-5.797q-0.148-0.148-0.148-0.352t0.148-0.352l5.797-5.797q0.148-0.148 0.352-0.148t0.352 0.148l1.297 1.297q0.148 0.148 0.148 0.352t-0.148 0.352z'/%3E%3C/svg%3E"), "#", "%23");
+// $sidebar-nav-dropdown-indicator-hover-color:$sidebar-nav-link-hover-color;
+// $sidebar-nav-dropdown-indicator-hover:str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 11 14'%3E%3Cpath fill='#{$sidebar-nav-dropdown-indicator-hover-color}' d='M9.148 2.352l-4.148 4.148 4.148 4.148q0.148 0.148 0.148 0.352t-0.148 0.352l-1.297 1.297q-0.148 0.148-0.352 0.148t-0.352-0.148l-5.797-5.797q-0.148-0.148-0.148-0.352t0.148-0.352l5.797-5.797q0.148-0.148 0.352-0.148t0.352 0.148l1.297 1.297q0.148 0.148 0.148 0.352t-0.148 0.352z'/%3E%3C/svg%3E"), "#", "%23");
+
+
+//$$$ Sidebar Minimizer $$$//
+
+$sidebar-minimizer-bg: rgba(0, 0, 0, 0);
+$sidebar-minimizer-indicator-color: $indicator-color;
+// $sidebar-minimizer-height: 50px;
+// $sidebar-minimizer-borders: 0;
+// $sidebar-minimizer-indicator: str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 11 14'%3E%3Cpath fill='#{$sidebar-minimizer-indicator-color}' d='M9.148 2.352l-4.148 4.148 4.148 4.148q0.148 0.148 0.148 0.352t-0.148 0.352l-1.297 1.297q-0.148 0.148-0.352 0.148t-0.352-0.148l-5.797-5.797q-0.148-0.148-0.148-0.352t0.148-0.352l5.797-5.797q0.148-0.148 0.352-0.148t0.352 0.148l1.297 1.297q0.148 0.148 0.148 0.352t-0.148 0.352z'/%3E%3C/svg%3E"), "#", "%23");
+// $sidebar-minimizer-hover-bg:          rgba(0,0,0,.3);
+// $sidebar-minimizer-hover-indicator-color: $sidebar-nav-link-hover-color;
+// $sidebar-minimizer-hover-indicator:   str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 11 14'%3E%3Cpath fill='#{$sidebar-minimizer-hover-indicator-color}' d='M9.148 2.352l-4.148 4.148 4.148 4.148q0.148 0.148 0.148 0.352t-0.148 0.352l-1.297 1.297q-0.148 0.148-0.352 0.148t-0.352-0.148l-5.797-5.797q-0.148-0.148-0.148-0.352t0.148-0.352l5.797-5.797q0.148-0.148 0.352-0.148t0.352 0.148l1.297 1.297q0.148 0.148 0.148 0.352t-0.148 0.352z'/%3E%3C/svg%3E"), "#", "%23");

@@ -24,18 +24,15 @@
         <br />
         <b-row>
           <b-col>
-            <input type="file" accept="image/jpeg" @change="uploadImage" />
+            <b-form-file type="file" accept="image/jpeg" @change="uploadImage" />
           </b-col>
         </b-row>
         <br />
         <b-row>
           <b-col>
-            <button type="submit" @click.prevent="submit">Submit</button>
+            <b-button type="submit" @click.prevent="submit">Submit</b-button>
           </b-col>
         </b-row>
-      </div>
-      <div v-if="blob">
-        <img v-bind:src="blob" />
       </div>
     </b-card>
   </div>
@@ -105,22 +102,43 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-h3 {
-  margin: 40px 0 0;
+<style lang="css" scoped>
+.griddy {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-areas:
+    "one"
+    "two"
+    "three"
+    "four"
+    "five"
+    "six"
+    "seven"
+    "eight"
+    "nine";
 }
-ul {
-  list-style-type: none;
-  padding: 0;
+
+@media (min-width: 600px) {
+  .griddy {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "one two"
+      "three four"
+      "five six"
+      "seven eight"
+      "nine ten";
+  }
 }
-li {
-  display: inline-block;
-  margin: 0 10px;
+
+@media (min-width: 800px) {
+  .griddy {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "one two three"
+      "four five six"
+      "seven eight nine";
+   }
 }
-a {
-  color: #42b983;
-}
-.uploading-image {
-  display: flex;
-}
+
+
 </style>
