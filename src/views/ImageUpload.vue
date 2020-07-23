@@ -3,6 +3,12 @@
     <b-card>
       <b-card-text><h4>Image Conversion</h4></b-card-text>
       <div>
+        <b-row class="mt-3">
+          <b-col>
+            <div ><strong>Please Select a Mode:</strong></div>
+            <b-form-select v-model="modeSelect" :options="options"></b-form-select>
+          </b-col>
+        </b-row>
         <b-row>
           <b-col>
             <div v-if="previewImage">
@@ -48,6 +54,12 @@ export default {
   },
   data() {
     return {
+      options: [
+        { value: null, text: 'Please select an option', disabled: true },
+        { value: 1, text: 'Cat to Anime' },
+        { value: 2, text: 'Anime to Cat' },
+      ],
+      modeSelect: 1,
       previewImage: null,
       imagePath: null,
       data: {
@@ -60,6 +72,7 @@ export default {
     uploadImage(e) {
       const image = e.target.files[0];
       this.data.file = e.target.files[0];
+      this.data.mode = this.modeSelect;
       const reader = new FileReader();
       reader.readAsDataURL(image);
       reader.onload = e => {
